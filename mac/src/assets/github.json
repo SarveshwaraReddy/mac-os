@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "title": "Todo Task Manager",
+      "description": "A task management app that lets users create, edit, delete, and store tasks using localStorage with a clean responsive interface.",
+      "tags": ["HTML", "CSS", "JavaScript", "LocalStorage"],
+      "repoLink": "https://github.com/tastejs/todomvc",
+      "demoLink": "https://todomvc.com/examples/javascript-es6/"
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+      "title": "Weather App",
+      "description": "A weather forecast application that fetches real-time weather data from an API and displays temperature, humidity, and conditions.",
+      "tags": ["JavaScript", "API", "CSS"],
+      "repoLink": "https://github.com/robertoduessmann/weather-app",
+      "demoLink": "https://robertoduessmann.github.io/weather-app/"
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+      "title": "Kanban Task Board",
+      "description": "A Trello-like Kanban board with drag-and-drop functionality for managing tasks across multiple workflow stages.",
+      "tags": ["HTML", "CSS", "JavaScript", "DragDrop"],
+      "repoLink": "https://github.com/rcdexta/kanban-board",
+      "demoLink": "https://rcdexta.github.io/kanban-board/"
+    },
+    {
+      "id": 4,
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      "title": "Markdown Previewer",
+      "description": "A live markdown editor that instantly converts markdown text into formatted HTML with real-time preview.",
+      "tags": ["JavaScript", "Markdown", "LivePreview"],
+      "repoLink": "https://github.com/coderadar/markdown-live-preview",
+      "demoLink": "https://coderadar.github.io/markdown-live-preview/"
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998",
+      "title": "Chat UI Interface",
+      "description": "A responsive chat interface design that simulates messaging with dynamic message rendering and modern UI layout.",
+      "tags": ["HTML", "CSS", "JavaScript", "UI"],
+      "repoLink": "https://github.com/mdbootstrap/Bootstrap-Chat",
+      "demoLink": "https://mdbootstrap.com/docs/standard/extended/chat/"
+    }
+  ]
