@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "react-markdown": "^10.1.0",
     "react-rnd": "^10.5.2",
+    "rehype-raw": "^7.0.0",
     "saas": "^1.0.0"
   },
   "devDependencies": {

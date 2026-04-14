@@ -2,29 +2,22 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import './window.scss'
 
-const MacWindow = ({children}) => {
+const MacWindow = ({children , height='60vh',width='30vw' ,windowName, setwindowsState}) => {
   return (
     <Rnd
-      default={{ x: 0, y: 0, width: 600, height: 400 }}
-      minWidth={300}
-      minHeight={300}
-      bounds="parent"
-      enableResizing={{
-        top: true,
-        right: true,
-        bottom: true,
-        left: true,
-        topRight: true,
-        bottomRight: true,
-        bottomLeft: true,
-        topLeft: true,
-      }}
-      dragHandleClassName="nav"
+    default={{
+      width:width,
+      height:height,
+      x:200,
+      y:100
+    }}
     >
       <div className="window">
         <div className="nav">
             <div className="dots">
-                <div className="dot red"></div>
+                <div
+                onClick={()=> setwindowsState(state=>({...state, [windowName]:false}))}                
+                className="dot red"></div>
                 <div className="dot yellow"></div>
                 <div className="dot green"></div>
             </div>

@@ -31,17 +31,17 @@ const GitCard = ({
         ))}
         </div>
       <div className="urls">
-        <a href={data.repoLink}>Repository</a>
-        <a href={data.demoLink}>Demo Link</a>
+        <a href={data.repoLink} target="_blank">Repository</a>
+        <a href={data.demoLink} target="_blank">Demo Link</a>
       </div>
       </div>
     </div>
   );
 };
-const Github = () => {
+const Github = ({windowName,windowsState, setwindowsState}) => {
   return (
     <div>
-      <MacWindow>
+      <MacWindow windowName={windowName} windowsState={windowsState} setwindowsState={setwindowsState}>
         <div className="cards">
           {githubData.map((project) => {
             return <GitCard key={project.id} data={project} />;
