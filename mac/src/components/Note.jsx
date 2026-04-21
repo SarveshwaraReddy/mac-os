@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import MacWindow from "./windows/MacWindow";
 import rehypeRaw from "rehype-raw";
 import './note.scss'
-const Note = () => {
+const Note = ({windowName,windowsState, setwindowsState}) => {
   const [markDown, setmarkDown] = useState(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const Note = () => {
       .then((text) => setmarkDown(text));
   }, []);
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} windowsState={windowsState} setwindowsState={setwindowsState}>
       <div className="note-window">
         {markDown ? <Markdown rehypePlugins={[rehypeRaw]}>{markDown}</Markdown> : <p>Loading....</p>}
       </div>

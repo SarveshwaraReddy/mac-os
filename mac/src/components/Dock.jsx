@@ -38,7 +38,12 @@ const Dock = ({ windowsState, setwindowsState }) => {
       >
         <img src="/doc-items/spotify.svg" alt="" />
       </div>
-      <div className="icon mail">
+      <div 
+        onClick={() => {
+          setwindowsState((state) => ({ ...state, mail: true }));
+        }}
+        className="icon mail"
+      >
         <img src="/doc-items/mail.svg" alt="" />
       </div>
       <div className="icon cli">
@@ -46,6 +51,9 @@ const Dock = ({ windowsState, setwindowsState }) => {
       </div>
       <div className="icon link">
         <img src="/doc-items/link.svg" alt="" />
+      </div>
+      <div className="icon profile">
+        <img src="/doc-items/profile-icon.png" alt="" />
       </div>
     </footer>
   );
