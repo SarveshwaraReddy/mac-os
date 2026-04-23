@@ -1,6 +1,7 @@
 import React from "react";
 import { Rnd } from "react-rnd";
 import './window.scss'
+import Title from "../../templates/Title";
 
 const MacWindow = ({children , height='60vh',width='30vw' ,windowName, setwindowsState}) => {
   return (
@@ -21,7 +22,7 @@ const MacWindow = ({children , height='60vh',width='30vw' ,windowName, setwindow
                 <div className="dot yellow"></div>
                 <div className="dot green"></div>
             </div>
-            <div className="title">sarve ~ zsh</div>
+            
         </div>
         <div className="main-content">{children}</div>
       </div>

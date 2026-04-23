@@ -14,11 +14,28 @@ const Mail = ({ windowName, windowsState, setwindowsState }) => {
           <h1>Reach Out</h1>
           <div className="box">
             <div className="box one">
-              <a href="mailto:sarveshwarareddy9@gmail.com" target="_blank"><i class="ri-mail-fill"></i> </a>sarveshwarareddy9@gmail.com
+              <a href="mailto:sarveshwarareddy9@gmail.com" target="_blank" rel="noreferrer">
+                <i className="ri-mail-fill"></i>
+              </a>
             </div>
             <div className="box two">
-              <a href="https://www.linkedin.com/in/sarveshwara-reddy-722384323" target="_blank"><i class="ri-linkedin-fill"></i></a> Username</div>
-        
+              <a
+                href="https://www.linkedin.com/in/sarveshwara-reddy-722384323"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="ri-linkedin-fill"></i>
+              </a>
+            </div>
+            <div className="box three">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="ri-github-fill"></i>
+              </a>
+            </div>
           </div>
         </div>
       </MacWindow>

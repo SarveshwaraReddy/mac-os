@@ -11,14 +11,14 @@ const Dock = ({ windowsState, setwindowsState }) => {
       >
         <img src="/doc-items/github.svg" alt="" />
       </div>
-      <div
+      {/* <div
         onClick={() => {
           setwindowsState((state) => ({ ...state, note: true }));
         }}
         className="icon note"
       >
         <img src="/doc-items/note.svg" alt="" />
-      </div>
+      </div> */}
       <div
         onClick={() => {
           setwindowsState((state) => ({ ...state, pdf: true }));
@@ -46,14 +46,24 @@ const Dock = ({ windowsState, setwindowsState }) => {
       >
         <img src="/doc-items/mail.svg" alt="" />
       </div>
-      <div className="icon cli">
+      <div
+        onClick={() => {
+          setwindowsState((state) => ({ ...state, cli: true }));
+        }}
+        className="icon cli"
+      >
         <img src="/doc-items/cli.svg" alt="" />
       </div>
       <div className="icon link">
         <img src="/doc-items/link.svg" alt="" />
       </div>
-      <div className="icon profile">
-        <img src="/doc-items/profile-icon.png" alt="" />
+      <div
+        onClick={() => {
+          setwindowsState((state) => ({ ...state, profile: true }));
+        }}
+        className="icon profile"
+      >
+      <i className="ri-user-3-fill"></i>
       </div>
     </footer>
   );

@@ -1,0 +1,9 @@
+.title{
+    font-size: 2rem;
+    font-weight: 600; 
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.title hr{
+    margin-top: 10px;
+}
