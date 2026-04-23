@@ -1,8 +1,15 @@
-spotify-window{
+.spotify-window{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    overflow: auto;
 }
-iframe{
+.spotify-window iframe{
     height: 100%;
     width: 100%;
     border: none;

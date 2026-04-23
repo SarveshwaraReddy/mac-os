@@ -1,105 +1,52 @@
-/**
- * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
- */
+# Sarveshwara Reddy
 
-// --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
-// --------------------------------------------------
+Frontend Developer based in Hyderabad, India.
+##
 
-const TECH_STACK = {
-  frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
-  ],
-  backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
-  ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
-};
+## About
 
-// --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
-// --------------------------------------------------
+Highly skilled Frontend Engineer specializing in building 
+immersive, high-fidelity web applications. Expert in React.js and GSAP, with a deep focus on 
+minimalist design aesthetics like Glassmorphism and performance-optimized storytelling. 
+Proven experience in translating complex design concepts into responsive, production-ready 
+code. 
 
-class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
-  }
+## Technical Skills
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
-   */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
-  }
-}
+- HTML
+- CSS
+- SCSS
+- Tailwind CSS
+- JavaScript
+- React.js
+- Three.js
 
-// --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
-// --------------------------------------------------
+## Personal Skills
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
+- Problem Solving
+- Teamwork
+- Communication
+- Adaptability
 
-const trophyCabinet: HackathonWin[] = [
-  {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
-  },
-  {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
-  }
-];
+## Projects
 
-// --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
-// --------------------------------------------------
+### Employ Sync
 
-const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
-]);
+Built a responsive React and Tailwind app using Context API for centralized state and LocalStorage for persistent, role-based task management.
 
-export default new ProfessionalHistory();
+### Action Hub
+
+An all-in-one productivity dashboard featuring customizable themes, daily goal tracking, motivational quotes, personalized task management, pomodoro timers, and weather updates.
+
+### NeuWrap
+
+Crafted a high-end web experience using React and GSAP, featuring seamless scroll animations, responsive Tailwind layouts, and performance-optimized UI.
+
+## Education
+
+- Bachelor of Computer Applications, 2024
 
 
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
+## Status
+
+Open to opportunities and collaborations.

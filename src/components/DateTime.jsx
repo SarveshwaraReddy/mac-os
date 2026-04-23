@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Green from './green'
 
 // returns formatted date/time string without commas similar to macOS clock
 function formatMacDateTime(date) {
@@ -27,8 +28,12 @@ function formatMacDateTime(date) {
   const ampm = hours >= 12 ? 'PM' : 'AM'
   hours = hours % 12 || 12
 
-  // macOS often shows e.g. "February 27 2026 10:30:15 AM" without commas
-  return `${month} ${day} ${year} ${hours}:${minutes}:${seconds} ${ampm}`
+  // Return JSX so the Green component is properly rendered
+  return (
+    <>
+      {month} {day} {year} &nbsp; <Green /> &nbsp; {hours}:{minutes}:{seconds} {ampm}
+    </>
+  )
 }
 
 const DateTime = () => {
