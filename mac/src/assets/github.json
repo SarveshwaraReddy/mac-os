@@ -1,29 +1,38 @@
 [
   {
     "id": 1,
-    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "title": "Employ Sync",
-    "description": "Employee management app built with React and Tailwind CSS. Uses Context API for centralized state and LocalStorage for persistent, role-based task management.",
-    "tags": ["React", "Tailwind CSS", "Context API", "LocalStorage"],
-    "repoLink": "https://github.com/",
-    "demoLink": "https://sarveshwarareddy-portfolio.netlify.app/"
+    "image": "reselience.png",
+    "title": "DevResilience Full-Stack Peer Support Platform",
+    "description": "I’m currently building a dedicated ecosystem for developers to troubleshoot and collaborate. It’s built on a React and Node.js architecture, featuring real-time peer support tools and a high-performance UI designed to handle complex developer workflows.",
+    "tags": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    "repoLink": "https://github.com/SarveshwaraReddy/DevResilience",
+    "demoLink": "https://devresilience.netlify.app/"
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "title": "NeuWrap",
-    "description": "A premium web experience using React and GSAP with seamless scroll animations, responsive Tailwind CSS layouts, and a performance-first UI.",
+    "image": "E-Commerce.png",
+    "title": "NeuWrap | Immersive Frontend Architecture",
+    "description": "I created a visually sophisticated web experience using React.js and GSAP, implementing scroll-triggered animations while optimizing assets to ensure smooth 60FPS performance.",
     "tags": ["React", "GSAP", "Tailwind CSS", "UI/UX"],
-    "repoLink": "https://github.com/",
-    "demoLink": "https://sarveshwarareddy-portfolio.netlify.app/"
+    "repoLink": "https://github.com/SarveshwaraReddy/e-com-site",
+    "demoLink": "https://newrap.netlify.app/"
   },
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    "image": "drawVoult.png",
+    "title": "DrawVault | AI-Orchestrated Performance Engine",
+    "description": "I built an AI-driven performance engine where I manually engineered a complex $50/30/20$ revenue split logic to ensure the financial data flow was bulletproof.",
+    "tags": ["React", "Node.js", "MongoDB", "AI"],
+    "repoLink": "https://github.com/SarveshwaraReddy/drawVault",
+    "demoLink": "https://drawvault.netlify.app/"
+  },
+  {
+    "id": 4,
+    "image": "action-hub.png",
     "title": "Action Hub",
     "description": "All-in-one productivity dashboard with customizable themes, goal tracking, motivational quotes, personalized tasks, pomodoro timers, and weather updates.",
     "tags": ["React", "JavaScript", "Dashboard", "Productivity"],
     "repoLink": "https://github.com/",
-    "demoLink": "https://sarveshwarareddy-portfolio.netlify.app/"
+    "demoLink": "https://sarveshwarareddy.github.io/action-hub/"
   }
 ]

@@ -12,7 +12,9 @@
   width: 100%;
   max-width: 20rem;
   flex-direction: column;
-  background-color: #222;
+  background: linear-gradient(145deg, rgba(28, 18, 54, 0.9), rgba(14, 34, 61, 0.88));
+  border: 1px solid rgba(110, 216, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   border-radius: 0.5rem;
   overflow: hidden;
 
@@ -40,7 +42,7 @@
     h1 {
       margin-bottom: 5px;
       font-size: 1.25rem;
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid rgba(122, 232, 255, 0.75);
     }
 
     p {
@@ -56,7 +58,7 @@
       .tag {
         padding: 2px 8px;
         border-radius: 5px;
-        background-color: #444;
+        background: rgba(255, 255, 255, 0.12);
         font-size: 0.8rem;
       }
     }
@@ -68,7 +70,7 @@
 
       a {
         text-decoration: none;
-        color: rgb(243, 255, 9);
+        color: #6ff8ff;
         cursor: pointer;
         font-size: 0.9rem;
       }
