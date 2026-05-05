@@ -12,9 +12,52 @@ main{
     position: relative;
     height: 100%;
     width: 100%;
+}
 
-    background-image: url("./assets/wall.jpeg");
+.desktop-bg{
+    position: absolute;
+    inset: 0;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    will-change: transform;
+    transform: translateZ(0);
+}
 
+.desktop-bg-base{
+    z-index: 0;
+}
+
+.desktop-bg-fade{
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.45s ease-in-out;
+}
+
+.desktop-bg-fade.show{
+    opacity: 1;
+}
+
+.desktop-content{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+  .desktop-content {
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+  .dock {
+    bottom: 2vh !important;
+  }
+  .window {
+    max-width: 90vw !important;
+    max-height: 80vh !important;
+  }
 }

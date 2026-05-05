@@ -1,4 +1,5 @@
 nav{
+    position: relative;
     width: 100%;
     color: white;
     padding-inline: 0.75rem;
@@ -14,8 +15,67 @@ nav{
     .left, .right{
         display: flex;
         gap: 1.5rem;
+        align-items: center;
+    }
+
+    .nav-item{
+        background: transparent;
+        border: none;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        padding: 0.2rem 0.35rem;
+        border-radius: 6px;
+        transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item:hover{
+        background-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .menu-wrap{
+        position: relative;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        min-width: 165px;
+        background: rgba(22, 22, 24, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        padding: 0.35rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        z-index: 9;
+    }
+
+    .dropdown-menu button{
+        text-align: left;
+        background: transparent;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.35rem 0.45rem;
+        font-size: 0.9rem;
         cursor: pointer;
     }
-    
-  
+
+    .dropdown-menu button:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .apple-icon img, .nav-icon img{
+        height: 16px;
+        width: 16px;
+    }
+
+    .wifi-off{
+        opacity: 0.45;
+    }
 }

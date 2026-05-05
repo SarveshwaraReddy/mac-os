@@ -1,3 +1,10 @@
+.mail-box {
+  background: linear-gradient(160deg, rgba(16, 10, 39, 0.95), rgba(8, 24, 50, 0.94));
+  border: 1px solid rgba(113, 221, 255, 0.3);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
 .mail-box .box {
   display: flex;
   justify-content: center;
@@ -24,21 +31,21 @@
     text-decoration: none;
 } 
 .box .one {
-  background-color: rgb(61, 61, 61);
+  background: rgba(14, 30, 55, 0.9);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 0 30px;
 }
 .box .two {
-  background-color: rgb(61, 61, 61);
+  background: rgba(14, 30, 55, 0.9);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 0 30px;
 }
 .box .three {
-  background-color: rgb(61, 61, 61);
+  background: rgba(14, 30, 55, 0.9);
   display: flex;
   justify-content: space-between;
   flex-direction: row;

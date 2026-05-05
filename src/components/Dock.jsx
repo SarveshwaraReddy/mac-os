@@ -1,72 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
 import "./dock.scss";
-const Dock = ({ windowsState, setwindowsState }) => {
+const Dock = React.forwardRef(({ windowsState, setwindowsState, onOpenWindow, iconRefs }, ref) => {
+  const openWindow = (windowName, iconRef) => {
+    if (onOpenWindow) {
+      onOpenWindow(windowName, iconRef);
+      return;
+    }
+    setwindowsState((state) => ({ ...state, [windowName]: true }));
+  };
+
   return (
-    <footer className="dock">
+    <footer className="dock" ref={ref}>
       <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, github: true }));
-        }}
+        ref={iconRefs.github}
+        onClick={() => openWindow("github", iconRefs.github.current)}
         className="icon github"
       >
-        <img src="/doc-items/github.svg" alt="" />
+<img src="/doc-items/github.svg" alt="" />
       </div>
-      {/* <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, note: true }));
-        }}
-        className="icon note"
-      >
-        <img src="/doc-items/note.svg" alt="" />
-      </div> */}
       <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, pdf: true }));
-        }}
-        className="icon pdf"
+        ref={iconRefs.calender}
+        onClick={() => openWindow("calender", iconRefs.calender.current)}
+        className="icon calender"
       >
-        <img src="/doc-items/pdf.svg" alt="" />
-      </div>
-      <div className="icon calender">
         <img src="/doc-items/calender.svg" alt="" />
       </div>
       <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, spotify: true }));
-        }}
+        ref={iconRefs.spotify}
+        onClick={() => openWindow("spotify", iconRefs.spotify.current)}
         className="icon spotify"
       >
-        <img src="/doc-items/spotify.svg" alt="" />
+<img src="/doc-items/spotify.svg" alt="" />
       </div>
       <div 
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, mail: true }));
-        }}
+        ref={iconRefs.mail}
+        onClick={() => openWindow("mail", iconRefs.mail.current)}
         className="icon mail"
       >
         <img src="/doc-items/mail.svg" alt="" />
       </div>
       <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, cli: true }));
-        }}
-        className="icon cli"
-      >
-        <img src="/doc-items/cli.svg" alt="" />
-      </div>
-      <div className="icon link">
-        <img src="/doc-items/link.svg" alt="" />
-      </div>
-      <div
-        onClick={() => {
-          setwindowsState((state) => ({ ...state, profile: true }));
-        }}
+        ref={iconRefs.profile}
+        onClick={() => openWindow("profile", iconRefs.profile.current)}
         className="icon profile"
       >
       <i className="ri-user-3-fill"></i>
       </div>
     </footer>
   );
-};
+});
+
+Dock.displayName = 'Dock';
+
 
 export default Dock;

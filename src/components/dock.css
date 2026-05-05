@@ -5,44 +5,66 @@
   left: 50%;
   gap: 0.8rem;
   transform: translate(-50%);
-  background-color: rgba(63, 63, 63, 0.395);
+  background: linear-gradient(135deg, rgba(22, 18, 48, 0.72), rgba(11, 25, 46, 0.72));
+  border: 1px solid rgba(111, 221, 255, 0.28);
+  box-shadow: 0 0 24px rgba(0, 209, 255, 0.2), 0 0 50px rgba(255, 0, 230, 0.14);
   padding-inline: 1rem;
   padding-block: 0.75rem;
   border-radius: 1rem;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(18px);
 }
 .dock .icon {
-  padding: 0.65rem;
-  border-radius: 0.25rem;
+  padding: 0.6rem;
+  border-radius: 0.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5rem;
-  aspect-ratio: 1/1;
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(16, 28, 62, 0.9);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.08), 0 12px 35px rgba(0, 0, 0, 0.24);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
-.dock .github, .dock .cli {
-  background-color: black;
+.dock .icon img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  image-rendering: optimizeQuality;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
 }
-.dock .note {
-  background: linear-gradient(to bottom, rgb(255, 179, 87), rgb(255, 153, 28));
+.dock .github {
+  background: linear-gradient(145deg, rgba(45, 35, 94, 0.9), rgba(17, 30, 63, 0.9));
 }
-.dock .pdf {
-  background: linear-gradient(to bottom, rgb(255, 65, 78), rgb(255, 25, 40));
-}
-.dock .calender, .dock .mail {
-  background: linear-gradient(to bottom, rgb(105, 94, 255), rgb(66, 52, 255));
+.dock .calender,
+.dock .mail {
+  background: linear-gradient(145deg, rgba(32, 71, 145, 0.9), rgba(37, 26, 101, 0.9));
 }
 .dock .spotify {
-  background: linear-gradient(to bottom, rgb(78, 179, 33), rgb(53, 142, 28));
+  background: linear-gradient(145deg, rgba(33, 137, 170, 0.92), rgba(70, 32, 130, 0.92));
 }
-.dock .link {
-  background: linear-gradient(to bottom, rgb(163, 97, 170), rgb(142, 33, 158));
+.dock .profile {
+  background: linear-gradient(145deg, rgba(61, 27, 117, 0.92), rgba(15, 50, 109, 0.92));
+}
+.dock .profile i {
+  color: #f5fbff;
+  font-size: 1.9rem;
+  text-shadow: 0 0 12px rgba(184, 240, 255, 0.65);
 }
 .dock .icon:hover {
-  transform: scale(1.3) translateY(-20%);
+  transform: scale(1.25) translateY(-18%);
+  box-shadow: 0 0 0 1px rgba(143, 231, 255, 0.7), 0 0 28px rgba(174, 43, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(44, 60, 118, 0.96);
 }
 .dock .icon:hover + .icon,
 .dock .icon:has(+ .icon:hover) {
-  transform: scale(1.1) translateY(-10%);
+  transform: scale(1.08) translateY(-9%);
 }/*# sourceMappingURL=dock.css.map */
